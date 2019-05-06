@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 154px;
+        }
+        .style4
+        {
+            width: 144px;
+            height: 88px;
+            margin-top: 35px;
+        }
+
+
+    </style>
+    <link href="Layout.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+                    <img class="img_fix" alt="" class="style4" src="sip.png" /><table class="style1">
+            <tr>
+                <td class="style2">
+                    &nbsp;</td>
+                <td>
+                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" Font-Size="X-Large" 
+                    Font-Underline="False" ForeColor="White" class="menu_style">
+                          <Items>
+                            <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/3_home.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Study Material" Value="Study Material" NavigateUrl="~/4_study_material.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Project" Value="Project" NavigateUrl="~/5_project.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Book" Value="Book" NavigateUrl="~/6_book.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Event" Value="Event" NavigateUrl="~/Default.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Achievement" Value="Achievement" NavigateUrl="~/9_achievements.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="FAQ" Value="FAQ" NavigateUrl="~/7_faq.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="About Us" Value="About Us" NavigateUrl="~/8_about.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Log Out" Value="Log Out" NavigateUrl="~/1_Login.aspx"></asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle ForeColor="#F97C00" BackColor="White" />
+                        <StaticMenuItemStyle HorizontalPadding="23px" />
+                    </asp:Menu>
+                </td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
+    <!--script>
+        history.pushState(null, null, location.href);
+        window.onpopstate = function () {
+            history.go(1);
+        };
+	</script-->

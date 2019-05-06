@@ -1,0 +1,18 @@
+﻿.menu_style
+{
+    position: fixed;
+    background-color: orange;
+    color: White;
+    height: 35px;
+    padding-top: 5px;
+    padding-left: 900px;
+}   
+
+.img_fix
+{
+    position: fixed;
+    top: 4px;
+    left: 13px;
+    height: 77px;
+    width: 141px;
+}

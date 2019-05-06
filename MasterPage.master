@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 192px;
+            height: 200px;
+        }
+        .style2
+        {
+            font-family: "Times New Roman", Times, serif;
+            font-size: xx-large;
+        }
+        .style3
+        {
+            font-size: xx-large;
+        }
+        
+        
+body
+{
+    background-image: url(bgi.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.head
+{
+    color:darkblue;
+    margin-bottom: -1%;
+    margin-top: 2%;
+    font-style: normal;
+    font-family: Comic Sans MS;
+}
+.text{
+            width: 70%;
+        }
+
+#login_t
+{
+    float:center; 
+    background-color:azure;
+    width:30%;
+    text-align: left;
+    padding-left: 2%;
+    margin-top: 0%;
+    margin-left: 34%;     
+}
+
+h1,h3
+{
+    color: brown;
+}
+.icon
+{
+    height: 5%;
+    width: 10%;
+}
+.faq
+{
+    height: 400px;
+    width:70%;
+    text-align: left;
+    padding-left: 2%;
+    margin-left: 14%;  
+    background-color: darkgray;
+    padding-top: 2.5%;
+}
+
+.book
+{    
+    height: 10%;
+    width: 10%;
+    padding-left: 12%;
+}
+
+
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server" enableviewstate="true" method="get">
+    <div>
+     <p>
+            <center>
+                <img  alt="" class="style1" src="SCETLOGO.jpg" border="3" 
+                    style="border-style: double" /><strong><br />
+                <br class="style3" />
+                </strong><span class="style2"><strong>STUDENT INTERACTION PORTAL</strong></span>
+            </center>
+            </p>
+
+ 
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+   
+        </asp:ContentPlaceHolder>
+     </div>
+   
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </form>
+</body>
+</html>
+    <!--script>
+        history.pushState(null, null, location.href);
+        window.onpopstate = function () {
+            history.go(1);
+        };
+	</script-->
